@@ -59,10 +59,6 @@
         width: calc(100% - 250px);
     }
 
-    h1 {
-        margin-top: 0;
-    }
-
     .card {
         background: var(--card-bg);
         padding: 20px;
@@ -115,15 +111,19 @@
 </head>
 <body>
 
+<!-- BARRE LATERALE -->
 <div class="sidebar">
     <div class="logo">Zenix</div>
-    <a class="active">Dashboard</a>
-    <a>Commandes</a>
-    <a>Support</a>
+    <a href="#dashboard" class="active">Dashboard</a>
+    <a href="#commandes">Commandes</a>
+    <a href="#support">Support</a>
 </div>
 
+<!-- CONTENU -->
 <div class="main">
-    <h1>Dashboard du bot Zenix</h1>
+
+    <!-- SECTION DASHBOARD -->
+    <h1 id="dashboard">Dashboard du bot Zenix</h1>
 
     <div class="card">
         <div class="card-title">Informations</div>
@@ -136,10 +136,9 @@
         </p>
     </div>
 
-    <div class="command-list">
+    <!-- SECTION COMMANDES -->
+    <div id="commandes" class="command-list">
         <h2>Liste des commandes</h2>
-
-        <!-- Tu peux ajouter autant de commandes que tu veux ici -->
 
         <div class="command">
             <div class="cmd-name">/help</div>
@@ -165,8 +164,13 @@
             <div class="cmd-name">/clear</div>
             <div class="cmd-desc">Supprime un nombre de messages.</div>
         </div>
+    </div>
 
-        <!-- Tu peux me dire toutes tes commandes et je te les ajoute automatiquement -->
+    <!-- SECTION SUPPORT -->
+    <div id="support" class="card">
+        <div class="card-title">Support</div>
+        <p>Besoin d’aide ? Rejoins le serveur Discord :</p>
+        <p><a class="link" href="https://discord.gg/SrNFDz3Ct3" target="_blank">Clique ici</a></p>
     </div>
 
 </div>
