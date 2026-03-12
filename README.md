@@ -1,2 +1,0 @@
-# zenix-dashboard
-Dashboard Zenix
